@@ -7,7 +7,7 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="(app)" options={{ headerShown: false }} />
         <Stack.Screen name="(auth)" options={{ headerShown: false }} />
-        <Stack.Screen name="libro/[id]" options={{ title: 'Detalle' }} />
+        <Stack.Screen name="libro/[id]" options={{ title: 'Detalle', headerBackButtonDisplayMode: 'minimal' }}/>
         <Stack.Screen
           name="acerca"
           options={{ presentation: 'modal', title: 'Acerca de' }}
