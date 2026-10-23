@@ -1,5 +1,16 @@
-import { Slot } from 'expo-router';
+import { Drawer } from 'expo-router/drawer';
 
-export default function Layout() {
-  return <Slot />;
+export default function AppLayout() {
+  return (
+    <Drawer>
+      <Drawer.Screen
+        name="(tabs)"
+        options={{ drawerLabel: 'Inicio', title: 'Biblioteca' }}
+      />
+      <Drawer.Screen
+        name="ajustes"
+        options={{ drawerLabel: 'Ajustes', title: 'Ajustes' }}
+      />
+    </Drawer>
+  );
 }
